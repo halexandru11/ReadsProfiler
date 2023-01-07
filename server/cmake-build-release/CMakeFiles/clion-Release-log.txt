@@ -1,0 +1,4 @@
+/home/halexandru11/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/home/halexandru11/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/bin/ninja/linux/ninja -G Ninja -S /home/halexandru11/skull/retele/homework3/server -B /home/halexandru11/skull/retele/homework3/server/cmake-build-release
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/halexandru11/skull/retele/homework3/server/cmake-build-release
