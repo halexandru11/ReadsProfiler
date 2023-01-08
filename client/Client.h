@@ -13,6 +13,7 @@ private:
     int m_Sockfd = 0;
     std::string m_ServerIp;
     int m_ServerPort;
+    int m_UserId = -1;
 
 private:
     bool Connect();

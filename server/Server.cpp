@@ -1,7 +1,14 @@
+#include <bits/socket.h>
+#include <sys/socket.h>
 #include <csignal>
+#include <netinet/in.h>
+#include <cstring>
+#include <thread>
+
 #include "Server.h"
-#include "Connection.h"
 #include "Error.h"
+#include "Database.h"
+#include "Connection.h"
 
 int Server::m_Sockfd;
 bool Server::m_Disconnecting = false;
@@ -32,6 +39,9 @@ void Server::Start() const {
         return;
     }
 
+    Database::Open();
+    Database::CreateTablesIfNotExist();
+
     while (true) {
         sockaddr_in client_addr{};
         socklen_t client_addr_len = sizeof(client_addr);
@@ -54,4 +64,5 @@ void Server::Start() const {
 void Server::signalHandler(int) {
     m_Disconnecting = true;
     close(m_Sockfd);
+    Database::Close();
 }

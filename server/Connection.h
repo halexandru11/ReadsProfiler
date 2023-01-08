@@ -9,7 +9,7 @@ class Connection {
 public:
     explicit Connection(int sockfd);
 
-    void Run() const;
+    void Run();
 
 private:
     static constexpr int BUFFER_SIZE = 1024;
@@ -17,7 +17,7 @@ private:
     int m_Sockfd;
 
 private:
-    static void SolveRequest(const string& request);
+    void SolveRequest(const string& request);
 
     void Login(const string& username, const string& password);
 

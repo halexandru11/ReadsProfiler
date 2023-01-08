@@ -1,3 +1,0 @@
-/home/halexandru11/skull/retele/homework3/server/cmake-build-release/CMakeFiles/server.dir
-/home/halexandru11/skull/retele/homework3/server/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/halexandru11/skull/retele/homework3/server/cmake-build-release/CMakeFiles/rebuild_cache.dir

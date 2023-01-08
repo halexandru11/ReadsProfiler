@@ -1,11 +1,4 @@
-#include <algorithm>
-#include <cstdio>
-#include <iostream>
-#include <thread>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <cstring>
+#pragma once
 
 class Server {
 public:

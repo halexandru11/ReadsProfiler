@@ -3,8 +3,7 @@ project(server)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(server main.cpp Server.cpp Server.h Connection.cpp Connection.h Error.cpp Error.h)
-
+add_executable(server main.cpp Server.cpp Server.h Connection.cpp Connection.h Error.cpp Error.h Database.cpp Database.h Book.cpp Book.h)
 include_directories(/usr/include)
 
 find_library(SQLITE3_LIBRARY NAMES sqlite3)

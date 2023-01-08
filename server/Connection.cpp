@@ -8,10 +8,11 @@
 
 #include "Connection.h"
 #include "Error.h"
+#include "Database.h"
 
 Connection::Connection(int sockfd) : m_Sockfd(sockfd) {}
 
-void Connection::Run() const {
+void Connection::Run() {
     char buffer[BUFFER_SIZE];
     ssize_t n = recv(m_Sockfd, buffer, BUFFER_SIZE, 0);
     if (n < 0) {
@@ -46,11 +47,10 @@ void Connection::SolveRequest(const std::string& request) {
 }
 
 void Connection::Login(const string& username, const string& password) {
-    string loginReq = "SELECT id FROM users "
-                      "WHERE username=\"" + username + "\" AND password=\"" + password + "\";";
-    char* errMsg;
-    sqlite3* db;
-    sqlite3_exec(db, loginReq.c_str(), nullptr, nullptr, &errMsg);
+    int userId = Database::GetUserIdByUsernameAndPassword(username, password);
+    if(userId == -1) {
+        Error::Print("Username or password are wrong");
+    }
 }
 
 vector<string> Connection::SplitString(std::stringstream&& str) {

@@ -1,3 +1,3 @@
-/home/halexandru11/skull/retele/homework3/server/cmake-build-debug/CMakeFiles/server.dir
-/home/halexandru11/skull/retele/homework3/server/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/halexandru11/skull/retele/homework3/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/halexandru11/skull/retele/ReadsProfiler/server/cmake-build-debug/CMakeFiles/server.dir
+/home/halexandru11/skull/retele/ReadsProfiler/server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/halexandru11/skull/retele/ReadsProfiler/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
