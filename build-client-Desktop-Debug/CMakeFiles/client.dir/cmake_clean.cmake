@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/client_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/client_autogen.dir/ParseCache.txt"
+  "client_autogen"
+  "CMakeFiles/client.dir/Book.cpp.o"
+  "CMakeFiles/client.dir/Book.cpp.o.d"
+  "CMakeFiles/client.dir/Client.cpp.o"
+  "CMakeFiles/client.dir/Client.cpp.o.d"
+  "CMakeFiles/client.dir/Connection.cpp.o"
+  "CMakeFiles/client.dir/Connection.cpp.o.d"
+  "CMakeFiles/client.dir/Error.cpp.o"
+  "CMakeFiles/client.dir/Error.cpp.o.d"
+  "CMakeFiles/client.dir/User.cpp.o"
+  "CMakeFiles/client.dir/User.cpp.o.d"
+  "CMakeFiles/client.dir/bookdetailsdialog.cpp.o"
+  "CMakeFiles/client.dir/bookdetailsdialog.cpp.o.d"
+  "CMakeFiles/client.dir/bookwidget.cpp.o"
+  "CMakeFiles/client.dir/bookwidget.cpp.o.d"
+  "CMakeFiles/client.dir/client_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+  "CMakeFiles/client.dir/client_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
+  "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/client.dir/filterdialogbox.cpp.o"
+  "CMakeFiles/client.dir/filterdialogbox.cpp.o.d"
+  "CMakeFiles/client.dir/gridview.cpp.o"
+  "CMakeFiles/client.dir/gridview.cpp.o.d"
+  "CMakeFiles/client.dir/logindialogbox.cpp.o"
+  "CMakeFiles/client.dir/logindialogbox.cpp.o.d"
+  "CMakeFiles/client.dir/main.cpp.o"
+  "CMakeFiles/client.dir/main.cpp.o.d"
+  "CMakeFiles/client.dir/mainwindow.cpp.o"
+  "CMakeFiles/client.dir/mainwindow.cpp.o.d"
+  "client"
+  "client.pdb"
+  "client_autogen/EWIEGA46WW/qrc_resources.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/client.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

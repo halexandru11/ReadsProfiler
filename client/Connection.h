@@ -2,13 +2,15 @@
 
 #include <string>
 
+using std::string;
+
 class Connection {
 public:
     explicit Connection(int sockfd);
 
-    void Send(const std::string& message) const;
+    void Send(const string& message) const;
 
-    [[nodiscard]] std::string Receive() const;
+    [[nodiscard]] string Receive() const;
 
 private:
     int m_Sockfd;

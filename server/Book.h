@@ -10,7 +10,8 @@ class Book {
 public:
     Book(int id,
          int authorId,
-         double rating,
+         int year,
+         float rating,
          string title,
          string ISBN,
          const vector<string> &genres,
@@ -18,24 +19,25 @@ public:
 
     Book(int id,
          int authorId,
-         double rating,
+         int year,
+         float rating,
          string title,
          string ISBN,
          const string &genres,
          const string &subgenres);
 
-    string ToString();
+    [[nodiscard]] string ToString() const;
 
 private:
-    int m_Id, m_AuthorId;
-    double m_Rating;
+    int m_Id, m_AuthorId, m_Year;
+    float m_Rating;
     string m_Title, m_ISBN;
     vector<string> m_Genres, m_Subgenres;
 
 private:
     static vector<string> SplitString(std::stringstream &&str);
 
-    string GenresToString();
+    [[nodiscard]] string GenresToString() const;
 
-    string SubgenresToString();
+    [[nodiscard]] string SubgenresToString() const;
 };

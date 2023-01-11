@@ -1,6 +1,0 @@
-# ninja log v5
-2	235	1673017218609632383	CMakeFiles/client.dir/Connection.cpp.o	9f321a13e8a7f9cd
-292	370	1673020296400906163	client	c2c9e9af1b59d58f
-1	292	1673020296324904850	CMakeFiles/client.dir/main.cpp.o	9dfdfb534395f2ff
-1	417	1673016392079645563	CMakeFiles/client.dir/Error.cpp.o	c9051177f8a86a80
-1	244	1673017425562469682	CMakeFiles/client.dir/Client.cpp.o	1d67e38a1d37a787

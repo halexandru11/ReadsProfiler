@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug/client_autogen",
+	"CMAKE_BINARY_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/client",
+	"CMAKE_SOURCE_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/client",
+	"INCLUDE_DIR" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug/client_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/halexandru11/skull/retele/ReadsProfiler/client/images/book.jpg",
+		"/home/halexandru11/skull/retele/ReadsProfiler/client/images/filter.png",
+		"/home/halexandru11/skull/retele/ReadsProfiler/client/images/logout.png",
+		"/home/halexandru11/skull/retele/ReadsProfiler/client/images/white-logo.png"
+	],
+	"LOCK_FILE" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug/CMakeFiles/client_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/home/halexandru11/Qt/6.4.2/gcc_64/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/halexandru11/skull/retele/ReadsProfiler/build-client-Desktop-Debug/CMakeFiles/client_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/halexandru11/skull/retele/ReadsProfiler/client/resources.qrc",
+	"VERBOSITY" : 0
+}

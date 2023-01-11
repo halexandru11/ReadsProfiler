@@ -5,7 +5,7 @@
 
 using std::cerr;
 
-void Error::PrintWithErrno(string&& description) {
+void Error::PrintWithErrno(string &&description) {
     while (description.back() == ' ' || description.back() == '.') {
         description.pop_back();
     }
@@ -16,6 +16,10 @@ void Error::PrintWithErrno(string&& description) {
     cerr << "Error code " << errno << ": " << strerror(errno) << "\n";
 }
 
-void Error::Print(string&& description) {
+void Error::Print(string &&description) {
+    cerr << description << "\n";
+}
+
+void Error::Print(const string &description) {
     cerr << description << "\n";
 }

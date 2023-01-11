@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>images/white-logo.png</file>
+        <file>images/logout.png</file>
+        <file>images/book.jpg</file>
+        <file>images/filter.png</file>
+    </qresource>
+</RCC>

@@ -14,12 +14,18 @@ public:
 private:
     static constexpr int BUFFER_SIZE = 1024;
     static constexpr char LOGIN[] = "login";
+    static constexpr char ALL_BOOKS[] = "allBooks";
+    static constexpr char BOOK_CONTENT[] = "bookContent";
     int m_Sockfd;
 
 private:
-    void SolveRequest(const string& request);
+    static string SolveRequest(const string &request);
 
-    void Login(const string& username, const string& password);
+    static string Login(const string &username, const string &password);
 
-    static vector<string> SplitString(std::stringstream&& str);
+    static string GetAllBooks();
+
+    static string GetBookContent(int bookId);
+
+    static vector<string> SplitString(std::stringstream &&str);
 };

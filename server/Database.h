@@ -2,8 +2,13 @@
 
 #include <sqlite3.h>
 #include <string>
+#include <vector>
+
+#include "Book.h"
+#include "User.h"
 
 using std::string;
+using std::vector;
 
 class Database {
 public:
@@ -13,21 +18,17 @@ public:
 
     static void Close();
 
-    static void CreateTablesIfNotExist();
+    static User GetUserIdByUsernameAndPassword(const string &username, const string &password);
 
-    static int GetUserIdByUsernameAndPassword(const string& username, const string& password);
+    static vector<Book> GetAllBooks();
+
+    static vector<Book> GetBooksWithGenre(string genre);
+
+    static string GetBookContent(int bookId);
 
 private:
-    static sqlite3* s_Db;
+    static sqlite3 *s_Db;
 
 private:
-    static void ExecuteQuery(const string& query);
-
-    static sqlite3_stmt* ExecuteSelectQuery(const string& query);
-
-    static void CreateUsersTable();
-
-    static void CreateBooksTable();
-
-    static void CreateAuthorsTable();
+    static void ExecuteQuery(const string &query);
 };

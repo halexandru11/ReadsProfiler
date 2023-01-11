@@ -85,6 +85,12 @@ build CMakeFiles/server.dir/Book.cpp.o: CXX_COMPILER__server_Debug /home/halexan
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir
 
+build CMakeFiles/server.dir/User.cpp.o: CXX_COMPILER__server_Debug /home/halexandru11/skull/retele/ReadsProfiler/server/User.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/User.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/server.dir
+  OBJECT_FILE_DIR = CMakeFiles/server.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target server
@@ -93,7 +99,7 @@ build CMakeFiles/server.dir/Book.cpp.o: CXX_COMPILER__server_Debug /home/halexan
 #############################################
 # Link the executable server
 
-build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/Connection.cpp.o CMakeFiles/server.dir/Error.cpp.o CMakeFiles/server.dir/Database.cpp.o CMakeFiles/server.dir/Book.cpp.o | /usr/lib/x86_64-linux-gnu/libsqlite3.so
+build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/Connection.cpp.o CMakeFiles/server.dir/Error.cpp.o CMakeFiles/server.dir/Database.cpp.o CMakeFiles/server.dir/Book.cpp.o CMakeFiles/server.dir/User.cpp.o | /usr/lib/x86_64-linux-gnu/libsqlite3.so
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsqlite3.so
   OBJECT_DIR = CMakeFiles/server.dir

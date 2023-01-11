@@ -1,4 +1,3 @@
-#include <bits/socket.h>
 #include <sys/socket.h>
 #include <csignal>
 #include <netinet/in.h>
@@ -21,7 +20,7 @@ void Server::Start() const {
         Error::PrintWithErrno("Could not create socket");
         return;
     }
-    signal(SIGTERM | SIGINT, &signalHandler);
+    signal(SIGTERM | SIGINT | SIGSEGV, &signalHandler);
 
     sockaddr_in addr{};
     std::memset(&addr, 0, sizeof(addr));
@@ -29,7 +28,7 @@ void Server::Start() const {
     addr.sin_addr.s_addr = INADDR_ANY;
     addr.sin_port = htons(m_Port);
 
-    if (bind(m_Sockfd, reinterpret_cast<sockaddr*>(&addr), sizeof(addr)) < 0) {
+    if (bind(m_Sockfd, reinterpret_cast<sockaddr *>(&addr), sizeof(addr)) < 0) {
         Error::PrintWithErrno("Could not bind the socket");
         return;
     }
@@ -40,12 +39,11 @@ void Server::Start() const {
     }
 
     Database::Open();
-    Database::CreateTablesIfNotExist();
 
     while (true) {
         sockaddr_in client_addr{};
         socklen_t client_addr_len = sizeof(client_addr);
-        int client_sockfd = accept(m_Sockfd, reinterpret_cast<sockaddr*>(&client_addr), &client_addr_len);
+        int client_sockfd = accept(m_Sockfd, reinterpret_cast<sockaddr *>(&client_addr), &client_addr_len);
         if (client_sockfd < 0) {
             if (m_Disconnecting == false) {
                 Error::PrintWithErrno("Error occured while trying to accept client");

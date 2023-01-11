@@ -1,12 +1,11 @@
-#include <iostream>
+#include "mainwindow.h"
 
-#include "Client.h"
+#include <QApplication>
 
-int main() {
-    auto client = Client("127.0.0.1", 8083);
-    while (true) {
-        std::string username, password;
-        std::cin >> username >> password;
-        std::cout << "Server response: " << client.Login(username, password);
-    }
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }

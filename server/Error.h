@@ -8,7 +8,9 @@ class Error {
 public:
     Error() = delete;
 
-    static void PrintWithErrno(string&& description);
+    static void PrintWithErrno(string &&description);
 
-    static void Print(string&& description);
+    static void Print(string &&description);
+
+    static void Print(const string &description);
 };
